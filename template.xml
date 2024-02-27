@@ -112,7 +112,7 @@
             </footer>
             <hr />
 
-            <script src='https://animedex.pages.dev/js/index.js' />
+            <script src='https://raw.githubusercontent.com/TechShreyash/AnimeDexBlogger/main/js/index.js' />
             <script async='async' crossorigin='anonymous'
                 src='https://kit.fontawesome.com/45cb819601.js' />
             <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV' />
