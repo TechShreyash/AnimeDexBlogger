@@ -60,8 +60,10 @@
         </b:if>
 
 
-        <!-- Home Page -->
         <b:if cond='data:view.isHomepage'>
+
+            <!-- Home Page Start -->
+
             <link href='https://animedex.pages.dev/css/index.css' rel='stylesheet' type='text/css' />
 
             <header id='head-div'>
@@ -112,7 +114,7 @@
             </footer>
             <hr />
 
-            <script src='https://raw.githubusercontent.com/TechShreyash/AnimeDexBlogger/main/js/index.js' />
+            <script src='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/index.js' />
             <script async='async' crossorigin='anonymous'
                 src='https://kit.fontawesome.com/45cb819601.js' />
             <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV' />
@@ -125,12 +127,171 @@
                 gtag(&quot;config&quot;, &quot;G-BHQX4066ZV&quot;);
             </script>
 
+            <!-- Home Page End -->
         </b:if>
 
-        <!-- Anime Page -->
-        <b:if cond='data:blog.searchLabel == "anime"'>
 
+        <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+            <b:if
+                cond='data:blog.url.canonical == data:blog.homepageUrl.canonical path &quot;/p/anime.html&quot;'>
+
+                <!-- Anime Page -->
+
+                <link href="https://animedex.pages.dev/css/anime.css" rel="stylesheet" />
+                <style>
+                    #cover {
+                    background-image: url("IMG");
+                    }
+                </style>
+
+                <header id="head-div">
+                    <div id="title1">
+                        <a href="./">
+                            <img width="150" height="40"
+                                src="https://animedex.pages.dev/static/header.png" alt="AnimeDex"></img>
+                        </a>
+                    </div>
+                    <div id="search-div">
+                        <form action="./search.html" method="GET">
+                            <input type="text" name="query" id="query" placeholder="Search Anime..."
+                                required="required" />
+                            <button name="search" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </header>
+                <div id="load">
+                    <img src="https://animedex.pages.dev/static/loading2.gif" alt="Loading..." />
+                </div>
+
+                <!-- Error Page -->
+                <div class="container" id="error-page" style="display: none;">
+                    <h6>Oops! Something Went Wrong</h6>
+                    <p>We're sorry, but it seems that something went wrong. Try refreshing the page
+                        or try again later.</p>
+                    <p>If the issue persists, you can contact our <a
+                            href="https://github.com/TechShreyash/AnimeDexLite/issues/new">support
+                        team</a>.</p>
+                    <p id="error-desc"></p>
+                </div>
+                <!-- Error Page -->
+
+                <div id="main-content" style="display: none">
+                    <section>
+                        <div id="background">
+                            <div id="cover"></div>
+                        </div>
+
+                        <div class="anime row">
+                            <div class="poster col-3">
+                                <img src="IMG" />
+                            </div>
+                            <div class="details col-6">
+                                <h1 class="anime-title">TITLE</h1>
+                                <div class="mid" style="margin: 20px 0px">
+                                    <span class="cbox">HD</span>
+                                    <span class="cbox">LANG</span>
+                                    <span class="dot"></span>
+                                    <span class="year">TYPE</span>
+                                </div>
+                                <div id="watchh" class="mid">
+                                    <a href="#watch" id="watch-btn" class="watch-btn">
+                                        <i class="fa fa-play"></i> Watch Now </a>
+                                </div>
+                                <div id="overview3" class="synopsis">SYNOPSIS</div>
+                            </div>
+                            <div id="info" class="col-3">
+                                <div class="info-items overview">
+                                    <span id="overview2" class="item-head">Overview:</span>
+                                    <span id="overview1" class="item-des">SYNOPSIS</span>
+                                </div>
+
+                                <div class="info-items">
+                                    <span class="item-head">Other Names:</span>
+                                    <span class="item-des">OTHER</span>
+                                </div>
+                                <div class="info-items">
+                                    <span class="item-head">Episodes:</span>
+                                    <span class="item-des">TOTAL</span>
+                                </div>
+                                <div class="info-items">
+                                    <span class="item-head">Release Year:</span>
+                                    <span class="item-des">YEAR</span>
+                                </div>
+                                <div class="info-items">
+                                    <span class="item-head">Type:</span>
+                                    <span class="item-des">TYPE</span>
+                                </div>
+                                <div class="info-items">
+                                    <span class="item-head">Status:</span>
+                                    <span class="item-des">STATUS</span>
+                                </div>
+
+                                <div class="info-items genre">
+                                    <span class="item-head">Genres:</span> GENERES </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="watch">
+                        <div class="divo">
+                            <h2>List Of Episodes:</h2>
+                            <!-- Episode Slider Start -->
+                            <div id="slider-main" class="slider-main" style="display: none;">
+                                <div id="slider-carousel" class="slider-carousel">
+                                    <div id="ep-slider" class="ep-slider"></div>
+                                </div>
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(+1)">❯</a>
+                            </div>
+                            <!-- Episode Slider End -->
+
+                            <!-- Episode List Start -->
+                            <div id="ephtmldiv" class="divo2"></div>
+                            <!-- Episode List End -->
+                        </div>
+                    </section>
+
+                    <section id="similar-div">
+                        <div class="divox">
+                            <h2 id="latest">Similar Animes</h2>
+                            <div id="load" class="sload" style="display: none;">
+                                <img src="https://animedex.pages.dev/static/loading2.gif"
+                                    alt="Loading..." />
+                            </div>
+                            <div id="latest2"></div>
+                        </div>
+                    </section>
+                </div>
+                <hr />
+                <footer>
+                    <div>
+                        <a href="https://github.com/TechShreyash" target="_blank">MADE WITH <i
+                                class="fa fa-heart pulse"></i>BY TECH SHREYASH</a>
+                        <a href="https://TechZBots.t.me" target="_blank">(@TechZBots)</a>
+                    </div>
+                </footer>
+                <hr />
+
+
+                <script
+                    src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/anime.js"></script>
+                <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
+                <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
+                <script>window.dataLayer = window.dataLayer || []; function gtag() {
+                    dataLayer.push(arguments); } gtag('js', new Date()); gtag('config',
+                    'G-BHQX4066ZV');</script>
+
+
+            </b:if>
         </b:if>
+
+        <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+            <h1>Something Went Wrong !!! Page Not Found</h1>
+            <h2>Report At https://telegram.me/TechZBots_Support</h2>
+        </b:if>
+
 
     </body>
 
