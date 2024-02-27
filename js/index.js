@@ -73,7 +73,7 @@ async function getTrendingAnimes(data) {
         let status = anime["status"];
         let genres = genresToString(anime["genres"]);
         let description = anime["description"];
-        let url = "./p/anime.html?anime=" + encodeURIComponent(title);
+        let url = "/p/anime.html?anime=" + encodeURIComponent(title);
 
         let poster = anime["bannerImage"];
         if (poster == null) {
@@ -97,7 +97,7 @@ async function getPopularAnimes(data) {
         let anime = data[pos];
         let title = anime["title"];
         let id = anime["id"];
-        let url = "./p/anime.html?anime=" + id;
+        let url = "/p/anime.html?anime=" + id;
         let image = anime["image"];
         let subOrDub;
         if (title.toLowerCase().includes("dub")) {
@@ -107,7 +107,7 @@ async function getPopularAnimes(data) {
         }
 
         POPULAR_HTML += `<a href="${url}"><div class="poster la-anime"> <div id="shadow1" class="shadow"><div class="dubb"># ${pos + 1
-            }</div> <div class="dubb dubb2">${subOrDub}</div> </div><div id="shadow2" class="shadow"> <img class="lzy_img" src="./static/loading1.gif" data-src="${image}"> </div><div class="la-details"> <h3>${title}</h3></div></div></a>`;
+            }</div> <div class="dubb dubb2">${subOrDub}</div> </div><div id="shadow2" class="shadow"> <img class="lzy_img" src="/static/loading1.gif" data-src="${image}"> </div><div class="la-details"> <h3>${title}</h3></div></div></a>`;
     }
 
     document.querySelector(".popularg").innerHTML = POPULAR_HTML;
@@ -121,7 +121,7 @@ async function getRecentAnimes(page = 1) {
         let anime = data[pos];
         let title = anime["title"];
         let id = anime["id"].split("-episode-")[0];
-        let url = "./p/anime.html?anime=" + id;
+        let url = "/p/anime.html?anime=" + id;
         let image = anime["image"];
         let ep = anime["episode"].split(" ")[1];
         let subOrDub;
@@ -131,7 +131,7 @@ async function getRecentAnimes(page = 1) {
             subOrDub = "SUB";
         }
 
-        RECENT_HTML += `<a href="${url}"><div class="poster la-anime"> <div id="shadow1" class="shadow"><div class="dubb">${subOrDub}</div><div class="dubb dubb2">EP ${ep}</div> </div><div id="shadow2" class="shadow"> <img class="lzy_img" src="./static/loading1.gif" data-src="${image}"> </div><div class="la-details"> <h3>${title}</h3></div></div></a>`;
+        RECENT_HTML += `<a href="${url}"><div class="poster la-anime"> <div id="shadow1" class="shadow"><div class="dubb">${subOrDub}</div><div class="dubb dubb2">EP ${ep}</div> </div><div id="shadow2" class="shadow"> <img class="lzy_img" src="/static/loading1.gif" data-src="${image}"> </div><div class="la-details"> <h3>${title}</h3></div></div></a>`;
     }
 
     document.querySelector(".recento").innerHTML += RECENT_HTML;

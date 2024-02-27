@@ -107,7 +107,7 @@ async function loadAnimeFromGogo(data) {
     document.getElementById("main-content").style.display = "block";
     document.getElementById("load").style.display = "none";
     document.getElementById("watch-btn").href =
-        "./p/episode.html?anime=" +
+        "/p/episode.html?anime=" +
         data["episodes"][0][1].split("-episode-")[0] +
         "&episode=" +
         data["episodes"][0][0];
@@ -149,7 +149,7 @@ async function loadAnimeFromAnilist(data) {
     for (i = 0; i < recommendations.length; i++) {
         let anime = recommendations[i];
         let title = anime["title"]["userPreferred"];
-        rechtml += `<a href="./p/anime.html?anime=${title}"><div class="poster la-anime"> <div id="shadow1" class="shadow"> <div class="dubb">${anime["meanScore"]} / 100</div><div class="dubb dubb2">${anime["format"]}</div></div><div id="shadow2" class="shadow"> <img class="lzy_img" src="https://animedex.pages.dev/static/loading1.gif" data-src="${anime["coverImage"]["large"]}"> </div><div class="la-details"> <h3>${title}</h3> <div id="extra"> <span>${anime["status"]}</span> <span class="dot"></span> <span>EP ${anime["episodes"]}</span> </div></div></div></a>`;
+        rechtml += `<a href="/p/anime.html?anime=${title}"><div class="poster la-anime"> <div id="shadow1" class="shadow"> <div class="dubb">${anime["meanScore"]} / 100</div><div class="dubb dubb2">${anime["format"]}</div></div><div id="shadow2" class="shadow"> <img class="lzy_img" src="https://animedex.pages.dev/static/loading1.gif" data-src="${anime["coverImage"]["large"]}"> </div><div class="la-details"> <h3>${title}</h3> <div id="extra"> <span>${anime["status"]}</span> <span class="dot"></span> <span>EP ${anime["episodes"]}</span> </div></div></div></a>`;
     }
     document.getElementById("latest2").innerHTML = rechtml;
 
@@ -168,7 +168,7 @@ async function getEpSlider(total) {
         let episodeId = total[i][1]
         let epNum = total[i][0]
         let x = episodeId.split("-episode-");
-        ephtml += `<div class=ep-slide><a href="./p/episode.html?anime=${x[0]}&episode=${x[1]}"><img onerror="retryImageLoad(this)" class="lzy_img" src="https://animedex.pages.dev/static/loading1.gif" data-src=https://thumb.anime-dex.workers.dev/thumb/${episodeId}><div class=ep-title><span>Episode ${epNum}</span></div></a></div>`;
+        ephtml += `<div class=ep-slide><a href="/p/episode.html?anime=${x[0]}&episode=${x[1]}"><img onerror="retryImageLoad(this)" class="lzy_img" src="https://animedex.pages.dev/static/loading1.gif" data-src=https://thumb.anime-dex.workers.dev/thumb/${episodeId}><div class=ep-title><span>Episode ${epNum}</span></div></a></div>`;
     }
     document.getElementById("ep-slider").innerHTML = ephtml;
     document.getElementById("slider-main").style.display = "block";
@@ -207,7 +207,7 @@ async function getEpList(total) {
 
     for (let i = 0; i < total.length; i++) {
         x = total[i][1].split("-episode-");
-        ephtml += `<a class="ep-btn" href="./p/episode.html?anime=${x[0]}&episode=${x[1]}">${x[1].replaceAll('-','.')}</a>`;
+        ephtml += `<a class="ep-btn" href="/p/episode.html?anime=${x[0]}&episode=${x[1]}">${x[1].replaceAll('-','.')}</a>`;
     }
     document.getElementById("ephtmldiv").innerHTML = ephtml;
     console.log("Episode list loaded");
@@ -234,7 +234,7 @@ async function getRecommendations(anime_title) {
     for (i = 0; i < recommendations.length; i++) {
         let anime = recommendations[i];
         let title = anime["title"]["userPreferred"];
-        rechtml += `<a href="./p/anime.html?anime=${title}"><div class="poster la-anime"> <div id="shadow1" class="shadow"> <div class="dubb">${anime["meanScore"]} / 100</div><div class="dubb dubb2">${anime["format"]}</div></div><div id="shadow2" class="shadow"> <img class="lzy_img" src="https://animedex.pages.dev/static/loading1.gif" data-src="${anime["coverImage"]["large"]}"> </div><div class="la-details"> <h3>${title}</h3> <div id="extra"> <span>${anime["status"]}</span> <span class="dot"></span> <span>EP ${anime["episodes"]}</span> </div></div></div></a>`;
+        rechtml += `<a href="/p/anime.html?anime=${title}"><div class="poster la-anime"> <div id="shadow1" class="shadow"> <div class="dubb">${anime["meanScore"]} / 100</div><div class="dubb dubb2">${anime["format"]}</div></div><div id="shadow2" class="shadow"> <img class="lzy_img" src="https://animedex.pages.dev/static/loading1.gif" data-src="${anime["coverImage"]["large"]}"> </div><div class="la-details"> <h3>${title}</h3> <div id="extra"> <span>${anime["status"]}</span> <span class="dot"></span> <span>EP ${anime["episodes"]}</span> </div></div></div></a>`;
     }
     document.getElementById("latest2").innerHTML = rechtml;
     document.getElementsByClassName("sload")[0].style.display = 'none';
@@ -256,7 +256,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 if (urlParams.get("anime") == null) {
-    window.location = "./";
+    window.location = "/";
 }
 
 //Running functions

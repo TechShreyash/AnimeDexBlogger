@@ -68,13 +68,13 @@
 
             <header id='head-div'>
                 <div id='title1'>
-                    <a href='./'>
+                    <a href='/'>
                         <img alt='AnimeDex' height='40'
                             src='https://animedex.pages.dev/static/header.png' width='150' />
                     </a>
                 </div>
                 <div id='search-div'>
-                    <form action='./search' method='GET'>
+                    <form action='/p/search.html' method='GET'>
                         <input id='query' name='query' placeholder='Search Anime...'
                             required='required' type='text' />
                         <button name='search' type='submit'>
@@ -146,13 +146,13 @@
 
                 <header id="head-div">
                     <div id="title1">
-                        <a href="./">
+                        <a href="/">
                             <img width="150" height="40"
                                 src="https://animedex.pages.dev/static/header.png" alt="AnimeDex"></img>
                         </a>
                     </div>
                     <div id="search-div">
-                        <form action="./search.html" method="GET">
+                        <form action="/p/search.html" method="GET">
                             <input type="text" name="query" id="query" placeholder="Search Anime..."
                                 required="required" />
                             <button name="search" type="submit">
