@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b'
+    xmlns:data='http://www.google.com/2005/gml/data'
+    xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+    <head>
+        <!-- Head Section From AnimeDexLite -->
+
+        <link href='https://animedex.pages.dev/favicon.ico' rel='icon' type='image/x-icon' />
+        <title>AnimeDex - Watch High Quality Anime Online</title>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+        <meta content='AnimeDex - Watch High Quality Anime Online' name='title' />
+        <meta
+            content='AnimeDex - Watch High Quality Anime Online. You can watch anime online free in HD without Ads. Best place for free find and one-click anime.'
+            name='description' />
+        <meta
+            content='anime dex, animedex, watch anime online, free anime, anime stream, anime hd, english sub, kissanime, gogoanime, animeultima, 9anime, 123animes, animefreak, vidstreaming, gogo-stream, animekisa, zoro.to, gogoanime.run, animedex, animekisa'
+            name='keywords' />
+        <meta content='UTF-8' name='charset' />
+        <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5'
+            name='viewport' />
+        <meta content='index, follow' name='robots' />
+        <meta content='index, follow' name='googlebot' />
+        <meta content='1 days' name='revisit-after' />
+        <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+        <meta content='en' http-equiv='Content-Language' />
+        <meta content='AnimeDex - Watch High Quality Anime Online' property='og:title' />
+        <meta
+            content='AnimeDex - Watch High Quality Anime Online. You can watch anime online free in HD without Ads. Best place for free find and one-click anime.'
+            property='og:description' />
+        <meta content='en_US' property='og:locale' />
+        <meta content='website' property='og:type' />
+        <meta content='AnimeDex' property='og:site_name' />
+        <meta content='https://animedex.pages.dev' property='og:url' />
+        <meta content='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/screenshots/home.jpeg'
+            itemprop='image' />
+        <meta content='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/screenshots/home.jpeg'
+            property='og:image' />
+        <meta content='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/screenshots/home.jpeg'
+            property='og:image:secure_url' />
+        <meta content='650' property='og:image:width' />
+        <meta content='350' property='og:image:height' />
+        <meta content='AnimeDex - Watch High Quality Anime Online' property='twitter:title' />
+        <meta
+            content='Trending page for anime on AnimeDex. You can watch anime online free in HD without Sign up. Best place for free find and one-click anime.'
+            property='twitter:description' />
+        <meta content='' property='twitter:url' />
+        <meta content='summary' property='twitter:card' />
+        <meta content='#202125' name='apple-mobile-web-app-status-bar' />
+
+        <b:if cond='!data:view.isLayoutMode'>
+            <b:skin><![CDATA[]]></b:skin>
+        </b:if>
+    </head>
+
+    <body>
+        <b:if cond='!data:view.isLayoutMode'>
+            <b:section id='header' name='header' />
+        </b:if>
+
+
+        <!-- Home Page -->
+        <b:if cond='data:view.isHomepage'>
+            <link href='https://animedex.pages.dev/css/index.css' rel='stylesheet' type='text/css' />
+
+            <header id='head-div'>
+                <div id='title1'>
+                    <a href='./'>
+                        <img alt='AnimeDex' height='40'
+                            src='https://animedex.pages.dev/static/header.png' width='150' />
+                    </a>
+                </div>
+                <div id='search-div'>
+                    <form action='./search' method='GET'>
+                        <input id='query' name='query' placeholder='Search Anime...'
+                            required='required' type='text' />
+                        <button name='search' type='submit'>
+                            <i class='fa fa-search' />
+                        </button>
+                    </form>
+                </div>
+            </header>
+
+            <section>
+                <div class='slideshow-container' />
+            </section>
+
+            <section>
+                <div class='divox'>
+                    <h2 id='latest'>Most Popular</h2>
+                    <div class='popularg' id='latest2'>MOST_POPULAR</div>
+                </div>
+            </section>
+
+            <section>
+                <div class='divox'>
+                    <h2 id='latest'>Recent Release</h2>
+                    <div class='recento' id='latest2' />
+                </div>
+            </section>
+            <div id='load'>
+                <img alt='Loading...' src='https://animedex.pages.dev/static/loading2.gif' />
+            </div>
+            <hr />
+            <footer>
+                <div>
+                    <a href='https://github.com/TechShreyash' target='_blank'>MADE WITH <i
+                            class='fa fa-heart pulse' />BY TECH SHREYASH</a>
+                    <a href='https://TechZBots.t.me' target='_blank'>(@TechZBots)</a>
+                </div>
+            </footer>
+            <hr />
+
+            <script src='https://animedex.pages.dev/js/index.js' />
+            <script async='async' crossorigin='anonymous'
+                src='https://kit.fontawesome.com/45cb819601.js' />
+            <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV' />
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                dataLayer.push(arguments);
+                }
+                gtag(&quot;js&quot;, new Date());
+                gtag(&quot;config&quot;, &quot;G-BHQX4066ZV&quot;);
+            </script>
+
+        </b:if>
+
+        <!-- Anime Page -->
+        <b:if cond='data:blog.searchLabel == "anime"'>
+
+        </b:if>
+
+    </body>
+
+</html>
