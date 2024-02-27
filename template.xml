@@ -135,7 +135,7 @@
             <b:if
                 cond='data:blog.url.canonical == data:blog.homepageUrl.canonical path &quot;/p/anime.html&quot;'>
 
-                <!-- Anime Page -->
+                <!-- Anime Page Start -->
 
                 <link href="https://animedex.pages.dev/css/anime.css" rel="stylesheet" />
                 <style>
@@ -283,6 +283,140 @@
                     dataLayer.push(arguments); } gtag('js', new Date()); gtag('config',
                     'G-BHQX4066ZV');</script>
 
+                <!-- Anime Page End -->
+            </b:if>
+
+
+            <b:if
+                cond='data:blog.url.canonical == data:blog.homepageUrl.canonical path &quot;/p/episode.html&quot;'>
+                <!-- Episode Page Start -->
+
+                <header id="head-div">
+                    <div id="title1">
+                        <a href="/">
+                            <img width="150" height="40"
+                                src="https://animedex.pages.dev/static/header.png" alt="AnimeDex"></img>
+                        </a>
+                    </div>
+                    <div id="search-div">
+                        <form action="/p/search.html" method="GET">
+                            <input type="text" name="query" id="query" placeholder="Search Anime..."
+                                required="required" />
+                            <button name="search" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </header>
+                <div id="load">
+                    <img src="https://animedex.pages.dev/static/loading2.gif" alt="Loading..." />
+                </div>
+
+                <!-- Error Page -->
+                <div class="container" id="error-page" style="display: none;">
+                    <h6>Oops! Something Went Wrong</h6>
+                    <p>We're sorry, but it seems that something went wrong. Try refreshing the page
+                        or try again later.</p>
+                    <p>If the issue persists, you can contact our <a
+                            href="https://github.com/TechShreyash/AnimeDexLite/issues/new">support
+                        team</a>.</p>
+                    <p id="error-desc"></p>
+                </div>
+                <!-- Error Page -->
+
+                <div id="main-section" style="opacity: 0;display: none;">
+                    <section id="vid-sec">
+                        <div id="vid-div">
+                            <div id="video">
+                                <iframe id="AnimeDexFrame" src="" style="border: 0px #ffffff none"
+                                    scrolling="no" frameborder="0"
+                                    marginheight="0px" marginwidth="0px" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </div>
+
+                        <div id="server_main">
+                            <div class="status">
+                                <div class="scontent"> You are watching <b id="ep-name">
+                                        <h1>{{ title }}</h1>
+                                    </b>If
+                                    current server doesn't work please try other servers beside. </div>
+                            </div>
+
+                            <div class="server">
+                                <div class="stitle">
+                                    <i class="fa fa-microphone"></i> Servers: </div>
+                                <div id="serversbtn" class="slist"></div>
+                            </div>
+
+                            <a id="showdl" onclick="showDownload()"><i class="fa fa-download"></i>
+                                Download</a>
+                            <div id="dldiv" class="dldiv">
+                                <h4 id="download">Download Links:</h4>
+
+                                <div class="server">
+                                    <div class="stitle">
+                                        <i class="fa fa-closed-captioning"></i>Quality: </div>
+                                    <div id="dllinks" class="slist">
+                                        <div id="load">
+                                            <img src="https://animedex.pages.dev/static/loading2.gif" alt="Loading..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="watch">
+                        <div class="divo">
+                            <h2>List Of Episodes:</h2>
+                            <!-- Episode Slider Start -->
+                            <div id="slider-main" class="slider-main" style="display: none;">
+                                <div id="slider-carousel" class="slider-carousel">
+                                    <div id="ep-slider" class="ep-slider"></div>
+                                </div>
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(+1)">❯</a>
+                            </div>
+                            <!-- Episode Slider End -->
+
+                            <!-- Episode List Start -->
+                            <div id="ephtmldiv" class="divo2"></div>
+                            <!-- Episode List End -->
+                        </div>
+                    </section>
+
+                </div>
+                <hr />
+                <footer>
+                    <div>
+                        <a href="https://github.com/TechShreyash" target="_blank">MADE WITH <i
+                                class="fa fa-heart pulse"></i>BY TECH SHREYASH</a>
+                        <a href="https://TechZBots.t.me" target="_blank">(@TechZBots)</a>
+                    </div>
+                </footer>
+                <hr />
+
+                <script src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/episode.js"></script>
+                <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
+                <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() {
+                    dataLayer.push(arguments);
+                    }
+                    gtag("js", new Date());
+                    gtag("config", "G-BHQX4066ZV");
+                </script>
+
+                <!-- Episode Page End -->
+
+            </b:if>
+
+
+            <b:if
+                cond='data:blog.url.canonical == data:blog.homepageUrl.canonical path &quot;/p/embed.html&quot;'>
+                <!-- Embed Page Start -->
+                <!-- Embed Page End -->
 
             </b:if>
         </b:if>
