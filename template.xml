@@ -264,7 +264,8 @@
                         <div class="divox">
                             <h2 id="latest">Similar Animes</h2>
                             <div id="load" class="sload" style="display: none;">
-                                <img src="https://animedex.pages.dev/static/loading2.gif" alt="Loading..." />
+                                <img src="https://animedex.pages.dev/static/loading2.gif"
+                                    alt="Loading..." />
                             </div>
                             <div id="latest2"></div>
                         </div>
@@ -366,7 +367,9 @@
                                         <i class="fa fa-closed-captioning"></i>Quality: </div>
                                     <div id="dllinks" class="slist">
                                         <div id="load">
-                                            <img src="https://animedex.pages.dev/static/loading2.gif" alt="Loading..." />
+                                            <img
+                                                src="https://animedex.pages.dev/static/loading2.gif"
+                                                alt="Loading..." />
                                         </div>
                                     </div>
                                 </div>
@@ -432,6 +435,89 @@
             <b:if
                 cond='data:blog.url.canonical == data:blog.homepageUrl.canonical path &quot;/p/embed.html&quot;'>
                 <!-- Embed Page Start -->
+
+                <style type="text/css">
+                    html {
+                    width: 100%;
+                    height: 100%;
+                    background: #111;
+                    }
+
+                    body {
+                    margin: 0px;
+                    background-color: #000;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    }
+
+                    body>.plyr {
+                    width: 100%;
+                    max-height: 100%;
+                    aspect-ratio: 16/9;
+                    }
+
+                    video {
+                    aspect-ratio: 16/9;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    }
+
+                    @keyframes plyr__time-skip {
+                    40% {
+                    opacity: 1;
+                    }
+
+                    100% {
+                    opacity: 0;
+                    }
+                    }
+
+                    .plyr__time-skip {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 10;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    width: 40%;
+                    opacity: 0;
+                    pointer-events: none;
+                    text-align: center;
+                    }
+
+                    .plyr__time-skip.is-left {
+                    left: 0;
+                    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+                    }
+
+                    .plyr__time-skip.is-right {
+                    right: 0;
+                    background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+                    }
+
+                    .plyr__time-skip.is-animated {
+                    animation: plyr__time-skip ease 1s forwards;
+                    }
+                </style>
+
+                <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+                <script src="https://cdn.jsdelivr.net/npm/plyr@3/dist/plyr.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+                <script src="https://unpkg.com/plyr@3"></script>
+                <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
+                <script>window.dataLayer = window.dataLayer || []; function gtag() {
+                    dataLayer.push(arguments); } gtag('js', new Date()); gtag('config',
+                    'G-BHQX4066ZV');</script>
+
+                <video controls="controls" crossorigin="crossorigin" playsinline="playsinline"></video>
+                <script
+                    src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/embed.js"></script>
                 <!-- Embed Page End -->
 
             </b:if>
