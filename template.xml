@@ -236,7 +236,6 @@
 
                     <section id="watch">
                         <div class="divo">
-                            <h2>List Of Episodes:</h2>
                             <!-- Episode Slider Start -->
                             <div id="slider-main" class="slider-main" style="display: none;">
                                 <div id="slider-carousel" class="slider-carousel">
@@ -248,7 +247,15 @@
                             <!-- Episode Slider End -->
 
                             <!-- Episode List Start -->
-                            <div id="ephtmldiv" class="divo2"></div>
+                            <div class="ep-divo-outer">
+                                <section>
+                                    <h2>List Of Episodes:</h2>
+                                    <select id="ep-upper-div" class="ep-divo-upper divo2"
+                                        onchange="episodeSelectChange(this)"></select>
+                                </section>
+                                <hr></hr>
+                                <div id="ep-lower-div" class="ep-divo-lower divo2"></div>
+                            </div>
                             <!-- Episode List End -->
                         </div>
                     </section>
@@ -257,8 +264,7 @@
                         <div class="divox">
                             <h2 id="latest">Similar Animes</h2>
                             <div id="load" class="sload" style="display: none;">
-                                <img src="https://animedex.pages.dev/static/loading2.gif"
-                                    alt="Loading..." />
+                                <img src="https://animedex.pages.dev/static/loading2.gif" alt="Loading..." />
                             </div>
                             <div id="latest2"></div>
                         </div>
@@ -290,6 +296,7 @@
             <b:if
                 cond='data:blog.url.canonical == data:blog.homepageUrl.canonical path &quot;/p/episode.html&quot;'>
                 <!-- Episode Page Start -->
+                <link href="https://animedex.pages.dev/css/episode.css" rel="stylesheet" />
 
                 <header id="head-div">
                     <div id="title1">
@@ -330,7 +337,8 @@
                             <div id="video">
                                 <iframe id="AnimeDexFrame" src="" style="border: 0px #ffffff none"
                                     scrolling="no" frameborder="0"
-                                    marginheight="0px" marginwidth="0px" allowfullscreen="allowfullscreen"></iframe>
+                                    marginheight="0px" marginwidth="0px"
+                                    allowfullscreen="allowfullscreen"></iframe>
                             </div>
                         </div>
 
@@ -368,7 +376,6 @@
 
                     <section id="watch">
                         <div class="divo">
-                            <h2>List Of Episodes:</h2>
                             <!-- Episode Slider Start -->
                             <div id="slider-main" class="slider-main" style="display: none;">
                                 <div id="slider-carousel" class="slider-carousel">
@@ -380,7 +387,15 @@
                             <!-- Episode Slider End -->
 
                             <!-- Episode List Start -->
-                            <div id="ephtmldiv" class="divo2"></div>
+                            <div class="ep-divo-outer">
+                                <section>
+                                    <h2>List Of Episodes:</h2>
+                                    <select id="ep-upper-div" class="ep-divo-upper divo2"
+                                        onchange="episodeSelectChange(this)"></select>
+                                </section>
+                                <hr></hr>
+                                <div id="ep-lower-div" class="ep-divo-lower divo2"></div>
+                            </div>
                             <!-- Episode List End -->
                         </div>
                     </section>
@@ -396,7 +411,8 @@
                 </footer>
                 <hr />
 
-                <script src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/episode.js"></script>
+                <script
+                    src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/episode.js"></script>
                 <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
                 <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
                 <script>
