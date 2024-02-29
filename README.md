@@ -8,7 +8,15 @@ It may have some bugs. To resolve it soon, create a new issue in this repository
 
 Or Contact at https://telegram.me/TechZBots_Support
 
-## Javascript Not Updating On Your Site ?
+
+## Installation Guide
+
+- Download [template.xml](./template.xml) File
+
+- Open your blogger theme page
+
+
+### Javascript Not Updating On Your Site ?
 
 - This website uses jsdelivr cdn to load javascript files, so you need to remove the cdn cache to show updates on your website
 
