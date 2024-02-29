@@ -33,11 +33,11 @@
         <meta content='website' property='og:type' />
         <meta content='AnimeDex' property='og:site_name' />
         <meta content='https://animedex.pages.dev' property='og:url' />
-        <meta content='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/screenshots/home.jpeg'
+        <meta content='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@latest/screenshots/home.jpeg'
             itemprop='image' />
-        <meta content='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/screenshots/home.jpeg'
+        <meta content='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@latest/screenshots/home.jpeg'
             property='og:image' />
-        <meta content='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/screenshots/home.jpeg'
+        <meta content='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@latest/screenshots/home.jpeg'
             property='og:image:secure_url' />
         <meta content='650' property='og:image:width' />
         <meta content='350' property='og:image:height' />
@@ -114,7 +114,7 @@
             </footer>
             <hr />
 
-            <script src='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/index.js' />
+            <script src='https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@latest/js/index.js' />
             <script async='async' crossorigin='anonymous'
                 src='https://kit.fontawesome.com/45cb819601.js' />
             <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV' />
@@ -283,7 +283,7 @@
 
 
                 <script
-                    src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/anime.js"></script>
+                    src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@latest/js/anime.js"></script>
                 <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
                 <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
                 <script>window.dataLayer = window.dataLayer || []; function gtag() {
@@ -415,7 +415,7 @@
                 <hr />
 
                 <script
-                    src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/episode.js"></script>
+                    src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@latest/js/episode.js"></script>
                 <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
                 <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
                 <script>
@@ -517,7 +517,7 @@
 
                 <video controls="controls" crossorigin="crossorigin" playsinline="playsinline"></video>
                 <script
-                    src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/embed.js"></script>
+                    src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@latest/js/embed.js"></script>
                 <!-- Embed Page End -->
 
             </b:if>
@@ -578,7 +578,7 @@
                 </footer>
                 <hr></hr>
 
-                <script src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/search.js"></script>
+                <script src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@latest/js/search.js"></script>
                 <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
                 <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
                 <script>window.dataLayer = window.dataLayer || []; function gtag() {

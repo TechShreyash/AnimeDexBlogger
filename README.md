@@ -21,10 +21,11 @@ Remove CDN Cache From JsDelivr
 - Copy the below urls and paste on that page
 
 ```
-https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/index.js
-https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/anime.js
-https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/episode.js
-https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@main/js/embed.js
+https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@latest/js/index.js
+https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@latest/js/anime.js
+https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@latest/js/episode.js
+https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@latest/js/embed.js
+https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDexBlogger@latest/js/search.js
 ```
 
 - Click on purge cache button
