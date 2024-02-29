@@ -523,8 +523,9 @@
             </b:if>
 
             <b:if
-                cond='data:blog.url.canonical == data:blog.homepageUrl.canonical path &quot;/p/embed.html&quot;'>
+                cond='data:blog.url.canonical == data:blog.homepageUrl.canonical path &quot;/p/search.html&quot;'>
                 <!-- Search Page Start -->
+                <link href="https://animedex.pages.dev/css/search.css" rel="stylesheet" />
 
                 <header id="head-div">
                     <div id="title1">

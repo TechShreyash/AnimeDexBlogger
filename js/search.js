@@ -84,10 +84,10 @@ async function SearchAnime(query, page = 1) {
             anime["subOrDub"] = "SUB";
         }
 
-        html += `<a href="./anime.html?anime=${anime["id"]
+        html += `<a href="/p/anime.html?anime=${anime["id"]
             }"><div class="poster la-anime"> <div id="shadow1" class="shadow"> <div class="dubb">${anime[
                 "subOrDub"
-            ].toUpperCase()}</div></div><div id="shadow2" class="shadow"> <img class="lzy_img" src="./static/loading1.gif" data-src="${anime["img"]
+            ].toUpperCase()}</div></div><div id="shadow2" class="shadow"> <img class="lzy_img" src="https://animedex.pages.dev/static/loading1.gif" data-src="${anime["img"]
             }"> </div><div class="la-details"> <h3>${sentenceCase(
                 anime["title"]
             )}</h3> <div id="extra"> <span>${anime["releaseDate"]
@@ -106,7 +106,7 @@ const query = params.get("query");
 let page = 1;
 
 if (query == null) {
-    window.location.replace("./index.html");
+    window.location.replace("/");
 }
 
 document.getElementById("latest").innerHTML = `Search Results: ${query}`;
